@@ -72,4 +72,3 @@ Once some low-performing functions have been identified, write code to optimize 
 * Use goroutines to process multiple things at a time
 * Cache results of functions that run slowly
 * Skip unneeded operations
-

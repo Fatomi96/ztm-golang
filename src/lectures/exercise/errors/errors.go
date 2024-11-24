@@ -15,4 +15,3 @@
 //* Use the `errors` package to generate errors
 
 package timeparse
-

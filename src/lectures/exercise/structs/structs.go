@@ -3,7 +3,7 @@
 //  of a rectangle.
 //
 //--Requirements:
-//* Create a rectangle structure containing a length and width field
+//* Create a rectangle structure containing its coordinates
 //* Using functions, calculate the area and perimeter of a rectangle,
 //  - Print the results to the terminal
 //  - The functions must use the rectangle structure as the function parameter
@@ -22,4 +22,3 @@ import "fmt"
 func main() {
 
 }
-

@@ -32,4 +32,3 @@ const (
 func main() {
 	servers := []string{"darkstar", "aiur", "omicron", "w359", "baseline"}
 }
-

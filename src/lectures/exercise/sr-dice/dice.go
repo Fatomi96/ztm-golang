@@ -5,7 +5,7 @@
 //
 //--Requirements:
 //* Print the sum of the dice roll
-//* Print additional information in these circumstances:
+//* Print additional information in these cirsumstances:
 //  - "Snake eyes": when the total roll is 2, and total dice is 2
 //  - "Lucky 7": when the total roll is 7
 //  - "Even": when the total roll is even
@@ -27,4 +27,3 @@ import "fmt"
 
 func main() {
 }
-

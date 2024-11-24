@@ -24,4 +24,3 @@ import "fmt"
 func main() {
 
 }
-

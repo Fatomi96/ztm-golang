@@ -14,5 +14,18 @@ package main
 import "fmt"
 
 func main() {
+	switch age := 0; {
+	case age == 0:
+		fmt.Println("newborn")
+		fallthrough
+	case age > 0 && age < 4:
+		fmt.Println("toddler")
+		fallthrough
+	case age > 3 && age < 13:
+		fmt.Println("child")
+	case age > 12 && age < 18:
+		fmt.Println("teenager")
+	case age > 17:
+		fmt.Println("adult")
+	}
 }
-

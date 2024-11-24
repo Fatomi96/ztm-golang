@@ -10,4 +10,3 @@ const (
 
 func main() {
 }
-

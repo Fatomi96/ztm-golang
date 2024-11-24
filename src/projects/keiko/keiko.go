@@ -4,9 +4,6 @@ import (
 	"bytes"
 	"database/sql"
 	"image"
-	_ "image/gif"
-	_ "image/jpeg"
-	_ "image/png"
 	"log"
 	"math/rand"
 	"net/http"
@@ -14,7 +11,12 @@ import (
 	"path"
 	"time"
 
+	_ "image/gif"
+	_ "image/jpeg"
+	_ "image/png"
+
 	"github.com/chai2010/webp"
+
 	_ "github.com/mattn/go-sqlite3"
 
 	"keiko/keikodb"
@@ -106,7 +108,7 @@ func handleRoot(db *sql.DB) http.Handler {
 }
 
 func main() {
-	rand.New(rand.NewSource(time.Now().UnixNano()))
+	rand.Seed(time.Now().UnixNano())
 
 	log.Println("Using database 'keiko.db'")
 	db, err := sql.Open("sqlite3", "keiko.db")
