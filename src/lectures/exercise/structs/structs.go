@@ -19,6 +19,32 @@ package main
 
 import "fmt"
 
-func main() {
+type Rectangle struct {
+	length int
+	width  int
+}
 
+func (myRectangle Rectangle) area() int {
+	return myRectangle.length * myRectangle.width
+}
+
+func (myRectangle Rectangle) perimeter() int {
+	return (myRectangle.length + myRectangle.width) * 2
+}
+
+func (myRectangle *Rectangle) doubleSize() {
+	myRectangle.length *= 2
+	myRectangle.width *= 2
+}
+
+func main() {
+	myRectangle := Rectangle{10, 5}
+
+	fmt.Println("Area:", myRectangle.area())
+	fmt.Println("Perimeter:", myRectangle.perimeter())
+
+	myRectangle.doubleSize()
+
+	fmt.Println("Area:", myRectangle.area())
+	fmt.Println("Perimeter:", myRectangle.perimeter())
 }
